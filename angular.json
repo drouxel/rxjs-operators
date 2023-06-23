@@ -5,7 +5,15 @@
   "projects": {
     "rxjs-operators": {
       "projectType": "application",
+<<<<<<< HEAD
       "schematics": {},
+=======
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+>>>>>>> 9426441 (initial commit)
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -20,12 +28,20 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
+<<<<<<< HEAD
+=======
+            "inlineStyleLanguage": "scss",
+>>>>>>> 9426441 (initial commit)
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css"
+=======
+              "src/styles.scss"
+>>>>>>> 9426441 (initial commit)
             ],
             "scripts": []
           },
@@ -82,12 +98,20 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
+<<<<<<< HEAD
+=======
+            "inlineStyleLanguage": "scss",
+>>>>>>> 9426441 (initial commit)
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css"
+=======
+              "src/styles.scss"
+>>>>>>> 9426441 (initial commit)
             ],
             "scripts": []
           }
