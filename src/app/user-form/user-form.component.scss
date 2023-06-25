@@ -1,0 +1,12 @@
+form {
+    padding: 2em;
+    width: 50%;
+    background-color: #a9a9a9;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    button {
+        justify-self: center;
+    }
+}

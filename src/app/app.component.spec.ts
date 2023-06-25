@@ -1,16 +1,10 @@
 import { TestBed } from '@angular/core/testing';
-<<<<<<< HEAD
-=======
 import { RouterTestingModule } from '@angular/router/testing';
->>>>>>> 9426441 (initial commit)
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
-<<<<<<< HEAD
-=======
     imports: [RouterTestingModule],
->>>>>>> 9426441 (initial commit)
     declarations: [AppComponent]
   }));
 

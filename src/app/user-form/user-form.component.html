@@ -1,0 +1,18 @@
+<h2>Veuillez renseigner les informations concernant l'utilisateur</h2>
+<form [formGroup]="userForm">
+    <mat-form-field>
+        <mat-label>Nom</mat-label>
+        <input matInput placeholder="Dupont" [formControlName]="'name'">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Prénom</mat-label>
+        <input matInput placeholder="Jean" [formControlName]="'surname'">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Date de naissance</mat-label>
+        <input matInput [matDatepicker]="picker" [formControlName]="'birthDate'">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <button mat-button type="submit" (click)="submitForm()">Enregistrer</button>
+</form>

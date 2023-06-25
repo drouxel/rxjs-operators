@@ -1,10 +1,7 @@
 # RxjsOperators
 
-<<<<<<< HEAD
 This is a little tutorial to learn how to master observables and rxjs operators
 
-=======
->>>>>>> 9426441 (initial commit)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
 ## Development server
