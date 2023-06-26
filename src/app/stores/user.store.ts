@@ -1,5 +1,5 @@
 import { User } from "../models/user.model";
-import { BehaviorSubject, Observable } from 'rxjs'
+import { BehaviorSubject, Observable, filter } from 'rxjs'
 import {Injectable} from '@angular/core';
 
 @Injectable({
@@ -13,6 +13,12 @@ export class UserStore {
      */
     public getUser(): Observable<User|null> {
         return this._user$.asObservable();
+    }
+
+    public getCurrentUser(): Observable<User> {
+        return this.getUser().pipe(
+            filter(user => !!user)
+        ) as Observable<User>;
     }
 
     /**

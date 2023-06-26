@@ -8,12 +8,15 @@ import { MatInputModule } from '@angular/material/input'
 import { MatDatepickerModule } from '@angular/material/datepicker'
 import { MatButtonModule } from '@angular/material/button'
 import { MatNativeDateModule } from '@angular/material/core'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FactsComponent } from './facts/facts.component'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserFormComponent
+    UserFormComponent,
+    FactsComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     MatDatepickerModule,
     MatNativeDateModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
